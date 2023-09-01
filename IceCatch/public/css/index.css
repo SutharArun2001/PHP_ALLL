@@ -1,0 +1,70 @@
+:root{
+    --primary-text:#004588;
+    --button-primary-color:#2699FB;
+}
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 1%  0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.logo {
+    height: 100px;
+}
+.logo img{
+    width: 300px;
+    height: auto;
+}
+.container .text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--primary-text);
+    font-size:20px;
+}
+.container .text .heading{
+    font-size:20px;
+    font-weight: 600;
+}
+.container .policy_term p,
+.container .policy_term p a{
+    color: var(--primary-text);
+}
+.container .button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container .boxImage{
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+.container .button a{
+    text-decoration: none;
+    background-color: var(--button-primary-color);
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 15%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container .button a .login::before{
+    content: "\f023";
+    font-size: 20px;
+}
+.container .button a .signup::before{
+    content: "\f023";
+}

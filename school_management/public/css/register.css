@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+.formcontainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    width: 800px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+}
+#formm {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+#formm label {
+    height: fit-content;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--label_color);
+}
+form .col {
+    width: 100%;
+    display: flex;
+    gap: 60px;
+}
+
+.col .row {
+    width: 50%;
+}
+
+.col .row .typeinput{
+    padding: 10px 10px;
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #B8B8B8;
+}
+select option{
+    color: #717171;
+}
+
+.col .row .radiogrp {
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.col .row .radiogrp>div {
+    width: 30%;
+}
+
+.col .row .radiogrp>div span {
+    margin-left: 10px;
+    color: var(--placeholder_color);
+}
+
+.error {
+    width: 100%;
+    color: #f00;
+}
+
+p {
+    margin: 0;
+}
+
+.subbtn {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 197px;
+    height: 45px;
+    background: #00C897;
+}
+.lstrow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.row img{
+    max-width:  55px;
+    max-height: 55px;
+    border-radius: 5px;
+}
